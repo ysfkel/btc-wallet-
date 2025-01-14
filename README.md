@@ -1,11 +1,5 @@
 # P2P Bitcoin Wallet Development Challenge
 
-## Overview
-
-This project is a peer-to-peer (P2P) Bitcoin wallet system designed to demonstrate expertise in distributed systems, cryptocurrency implementations, and decentralized architectures. The wallet allows multiple devices to securely share and synchronize a single Bitcoin wallet, ensuring consistent state across all instances without a central server.
-
----
-
 ## Design Overview
 
 ### Core Features
