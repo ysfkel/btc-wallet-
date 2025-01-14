@@ -1,0 +1,26 @@
+{
+  "name": "tether",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node main.js",
+      "fmt": "prettier --write 'src/**/*.{js,jsx,tsx}'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prettier": "^3.2.5",
+    "fmt": "^2.0.0",
+    "hyperbee": "^2.21.2",
+    "hypercore": "^10.38.2",
+    "hyperswarm": "^4.8.4",
+    "install": "^0.13.0",
+    "lib-wallet": "github:tetherto/lib-wallet#v0.0.1",
+    "npm": "^11.0.0",
+    "sodium-native": "^4.3.1"
+  }
+}
