@@ -24,8 +24,6 @@ This project is a peer-to-peer (P2P) Bitcoin wallet system designed to demonstra
      Transactions are created and broadcast using the `BitcoinPay` module, with blockchain interaction provided via an Electrum server in Regtest mode.
    - **Address Generation**:  
      New addresses are generated using `KeyManager`, ensuring secure private key management.
-   - **State Synchronization**:  
-     The wallet state is synchronized across all devices via P2P connections using `Hypercore` events (`sync` and `append`).
 
 ---
 
@@ -67,6 +65,8 @@ This project is a peer-to-peer (P2P) Bitcoin wallet system designed to demonstra
 
 5. **Logging and Monitoring**  
    - Comprehensive logging for key events such as peer connections, synchronization progress, and transaction statuses is missing. Adding detailed logs would aid in debugging and performance monitoring.
+6.    - **State Synchronization**:  
+     wallet state synchronization using btcPay syncTransactions
 
 ---
 
@@ -83,12 +83,3 @@ This project is a peer-to-peer (P2P) Bitcoin wallet system designed to demonstra
 
 4. **User Interface**  
    - Currently, the system operates as a backend service. Developing a web or mobile front-end application would improve usability.
-
----
-
-## How to Run
-
-1. **Clone the repository**:
-   ```bash
-   git clone <repository-url>
-   cd bitcoin-wallet

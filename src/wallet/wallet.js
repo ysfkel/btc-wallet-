@@ -67,7 +67,6 @@ export class BitcoinWallet {
   }
 
   async generateAddress() {
-    console.log(await this.btcPay.getNewAddress());
     this.address = await this.btcPay.getNewAddress();
   }
 
@@ -147,18 +146,4 @@ async function saveEncryptedSeed(encryptedData) {
   }
 }
 
-// Load encrypted seed from disk
-async function loadEncryptedSeed() {
-  const seedPath = path.join(
-    process.cwd(),
-    "wallet-data",
-    "encrypted-seed.json",
-  );
-
-  try {
-    const data = await fs.readFile(seedPath, "utf8");
-    return JSON.parse(data);
-  } catch (error) {
-    throw new Error(`Failed to load encrypted seed: ${error.message}`);
-  }
-}
+// Load encrypted seed from disk 
